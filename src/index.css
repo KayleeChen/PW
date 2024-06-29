@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* global.css 或 index.css */
+:root {
+    --bg-color: #ffffff; /* Light mode background */
+    --text-color: #000000; /* Light mode text */
+  }
+  
+  /* .dark {
+    --bg-color: #000000; /* Dark mode background */
+    /* --text-color: #ffffff; } */
+    /* Dark mode text*/   
+  
+.dark [class*="bg-"] {
+    --tw-bg-opacity:1; 
+    background-color: rgb(26,32,44,var(--tw-bg-opacity)) !important; 
+  }
+  
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
